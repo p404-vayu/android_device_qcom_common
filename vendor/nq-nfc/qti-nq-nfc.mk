@@ -13,8 +13,8 @@
 # limitations under the License.
 
 # Inherit from NQ NFC.
-$(call inherit-product, vendor/nxp/opensource/commonsys/packages/apps/Nfc/nfc_system_product.mk)
-$(call inherit-product, vendor/nxp/opensource/halimpl/nfc_vendor_product.mk)
+$(call inherit-product-if-exists, vendor/nxp/opensource/commonsys/packages/apps/Nfc/nfc_system_product.mk)
+$(call inherit-product-if-exists, vendor/nxp/opensource/halimpl/nfc_vendor_product.mk)
 
 TARGET_USES_NQ_NFC := true
 
